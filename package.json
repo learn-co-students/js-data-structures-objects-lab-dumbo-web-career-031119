@@ -4,7 +4,7 @@
   "description": "Learn.co's practice with manipulating JavaScript objects.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json --timeout 7500"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-data-structures-objects-lab#readme",
   "devDependencies": {
+    "@babel/code-frame": "^7.0.0",
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "1.7.0",
     "chai": "^4.2.0",
     "file-system": "^2.2.2",
